@@ -38,8 +38,3 @@
 @import "../node_modules/@getbase/base/scss/display-helpers";
 @import "../node_modules/@getbase/base/scss/flex-helpers";
 @import "../node_modules/@getbase/base/scss/position-helpers";
-
-#shop img {
-  object-fit: cover; /* Optional: crops image to fit */
-  max-height: 300px; /* Optional: limits image height */
-}

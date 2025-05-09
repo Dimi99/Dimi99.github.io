@@ -2165,10 +2165,5 @@ a {
 
   .sticky-xl {
     position: sticky; } }
-#shop img {
-  object-fit: cover;
-  /* Optional: crops image to fit */
-  max-height: 300px;
-  /* Optional: limits image height */ }
 
 /*# sourceMappingURL=index.css.map */
