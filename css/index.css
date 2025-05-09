@@ -4,6 +4,12 @@
     width: 200px;
     /* Even smaller for mobile */
     height: auto; } }
+@media (max-width: 600px) {
+  .banner-heading-text-1 {
+    font-size: 1.5rem;
+    /* Adjust as needed */
+    word-break: break-word;
+    line-height: 1.2; } }
 *, *:before, *:after {
   box-sizing: border-box; }
 

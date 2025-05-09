@@ -8,6 +8,14 @@
     height: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .banner-heading-text-1 {
+    font-size: 1.5rem; /* Adjust as needed */
+    word-break: break-word;
+    line-height: 1.2;
+  }
+}
 // Variables
 @import "styles/variables";
 
