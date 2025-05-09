@@ -1,0 +1,10 @@
+.testimonials.content-block.active:after {
+  @include animate(.8s);
+  @extend .reveal-from-top;
+  animation-delay: 0.5s;
+}
+.testimonials.content-block.active .container {
+  @include animate(.8s);
+  @extend .fade-in-top;
+  animation-delay: .8s;
+}

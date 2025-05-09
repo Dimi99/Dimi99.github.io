@@ -1,0 +1,150 @@
+// Animations
+
+// Fade in
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in { animation-name: fadeIn; }
+
+// Fade in top
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fade-in-top { animation-name: fadeInTop; }
+
+// Fade in top
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fade-in-bottom { animation-name: fadeInBottom; }
+
+// Fade in down (from top to bottom)
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-down { animation-name: fadeInDown; }
+
+// Fade in left (from right to left)
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-left { animation-name: fadeInLeft; }
+
+// Fade in right (from left to right)
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-right { animation-name: fadeInRight; }
+
+// Fade in up (from bottom to top)
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-up { animation-name: fadeInUp; }
+
+// Reveal from left
+@keyframes revealFromLeft {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 100% 0;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+  }
+}
+
+.reveal-from-left { animation-name: revealFromLeft; }
+
+// Reveal from right
+@keyframes revealFromRight {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 0 0;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+  }
+}
+
+.reveal-from-right { animation-name: revealFromRight; }
+
+// Reveal from top
+@keyframes revealFromTop {
+  0% {
+    transform: scaleY(1);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+  }
+}
+
+.reveal-from-top { animation-name: revealFromTop; }
+
+// Reveal from bottom
+@keyframes revealFromBottom {
+  0% {
+    transform: scaleY(1);
+    transform-origin: 0 0;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: 0 0;
+  }
+}
+
+.reveal-from-bottom { animation-name: revealFromBottom; }

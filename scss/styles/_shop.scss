@@ -1,0 +1,5 @@
+.shop.active img {
+  @include animate(.8s);
+  @extend .fade-in-left;
+  animation-delay: .5s;
+}

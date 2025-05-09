@@ -1,0 +1,10 @@
+.our-ingredients:before {
+  background: url(../img/our-ingredients.jpg) 50% 50% no-repeat $purple-secondary;
+  background-size: cover;
+}
+
+.our-ingredients.active:before {
+  @include animate(.8s);
+  @extend .fade-in-left;
+  animation-delay: 0.5s;
+}

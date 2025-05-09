@@ -1,0 +1,82 @@
+// Header
+.header { background: $white; }
+
+.logo {
+  width: 400px;
+  height: 60px;
+  background: url(../img/soap.svg) 50% 50% no-repeat;
+  display: block;
+  transition: all .5s;
+  cursor: pointer;
+  margin: 0 auto;
+  &:hover, &:focus {
+    opacity: .6;
+  }
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  @include breakpoint(l) {
+    justify-content: center;
+    white-space: wrap;
+  }
+}
+
+.navigation-item-link {
+  color: $purple-primary;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 .5rem;
+  @include breakpoint(m) {
+    margin: 0 1.5rem;
+  }
+  &:after {
+    margin-top: 1rem;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $purple-primary;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .3s;
+  }
+  &:hover, &:focus {
+    transition: all .2s;
+    background: transparent;
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+// Animations
+.navigation-item-1 {
+  @include animate(.5s);
+  @extend .fade-in-top;
+  animation-delay: .6s;
+}
+.navigation-item-2 {
+  @include animate(.5s);
+  @extend .fade-in-top;
+  animation-delay: .8s;
+}
+.navigation-item-3 {
+  @include animate(.5s);
+  @extend .fade-in-top;
+  animation-delay: 1s;
+}
+.navigation-item-4 {
+  @include animate(.5s);
+  @extend .fade-in-top;
+  animation-delay: 1.2s;
+}

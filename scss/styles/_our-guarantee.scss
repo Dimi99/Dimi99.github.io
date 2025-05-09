@@ -1,0 +1,10 @@
+.our-guarantee.content-block.active:after {
+  @include animate(.8s);
+  @extend .reveal-from-bottom;
+  animation-delay: 0.5s;
+}
+.our-guarantee.content-block.active .container {
+  @include animate(.8s);
+  @extend .fade-in-bottom;
+  animation-delay: .8s;
+}
