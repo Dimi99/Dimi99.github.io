@@ -1191,7 +1191,7 @@ a {
   animation-delay: .5s; }
 
 .how-it-works:before {
-  background: url(../img/how-it-works.jpg) 50% 50% no-repeat #8a566c;
+  background: url(../img/leistungen.jpg) 50% 50% no-repeat #8a566c;
   background-size: cover; }
 
 .how-it-works.active:before {
