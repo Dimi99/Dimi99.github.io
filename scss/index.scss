@@ -2,6 +2,12 @@
 // One Page Beauty HTML and CSS Template - http://getbase.org
 // ==========================================================================
 
+@media (max-width: 768px) {
+  svg {
+    width: 200px; /* Even smaller for mobile */
+    height: auto;
+  }
+}
 // Variables
 @import "styles/variables";
 

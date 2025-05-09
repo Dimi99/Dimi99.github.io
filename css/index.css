@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@media (max-width: 768px) {
+  svg {
+    width: 200px;
+    /* Even smaller for mobile */
+    height: auto; } }
 *, *:before, *:after {
   box-sizing: border-box; }
 
