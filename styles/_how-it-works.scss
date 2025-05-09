@@ -1,0 +1,10 @@
+.how-it-works:before {
+  background: url(../img/Leistungen.jpg) 50% 50% no-repeat $purple-secondary;
+  background-size: cover;
+}
+
+.how-it-works.active:before {
+  @include animate(.8s);
+  @extend .fade-in-right;
+  animation-delay: 0.5s;
+}
