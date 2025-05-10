@@ -1131,7 +1131,7 @@ a {
   animation-delay: 1.2s; }
 
 .banner {
-  background: url(../img/banner_feet.jpg) 10% 10% no-repeat #000;
+  background: url(../img/banner_feet_small.jpg) 10% 10% no-repeat #000;
   background-size: cover;
   color: #fff;
   position: relative; }
