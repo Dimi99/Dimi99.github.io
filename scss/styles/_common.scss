@@ -284,11 +284,12 @@ a {
 @media (max-width: 600px) {
   .contact-box {
     padding: 10px;
+    font-size: 1rem; /* Slightly smaller font on mobile */
   }
 
   .contact-box a {
     padding: 8px 15px;
     max-width: 85%; /* Tighter fit on mobile */
-    font-size: 1.0rem; /* Smaller text for better fit */
+    font-size: 0.9rem; /* Smaller text for better fit */
   }
 }
