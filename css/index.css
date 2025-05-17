@@ -1060,16 +1060,16 @@ a {
   background-color: #9e1950;
   /* Default for call button */
   color: white;
-  padding: 10px 20px;
+  padding: 20px 20px;
+  /* Doubled top/bottom padding for increased height */
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.8;
+  /* Adjusted for better text centering */
   width: 100%;
-  /* Stretch to fill container */
   max-width: 300px;
-  /* Consistent width for all buttons */
   overflow-wrap: break-word;
   margin: 5px 0;
   box-sizing: border-box; }
@@ -1089,10 +1089,12 @@ a {
     font-size: 1rem; }
 
   .contact-box a {
-    padding: 8px 15px;
+    padding: 16px 15px;
+    /* Doubled top/bottom padding for mobile */
     max-width: 250px;
-    /* Slightly smaller consistent width on mobile */
-    font-size: 0.9rem; } }
+    font-size: 0.9rem;
+    line-height: 1.6;
+    /* Adjusted for mobile */ } }
 .header {
   background: #fff; }
 
