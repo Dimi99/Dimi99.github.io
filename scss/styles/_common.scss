@@ -246,12 +246,49 @@ a {
 
 
 .contact-box {
-  background-color: #f8d7da; /* Light red background */
-  color: #721c24; /* Dark red text */
-  padding: 10px 15px;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   border: 1px solid #f5c6cb;
+  max-width: 100%; /* Ensure box doesn't exceed container */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.contact-box a {
+  background-color: #9e1950; /* Default for call button */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 90%; /* Limit link width to fit within box */
+  overflow-wrap: break-word; /* Allow long text to wrap */
+  margin: 5px 0; /* Add spacing between links */
+}
+
+.contact-box a.whatsapp {
+  background-color: #25D366; /* WhatsApp green */
+}
+
+.contact-box a.email {
+  background-color: #0072c6; /* Email blue */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .contact-box {
+    padding: 10px;
+  }
+
+  .contact-box a {
+    padding: 8px 15px;
+    max-width: 85%; /* Tighter fit on mobile */
+    font-size: 1.0rem; /* Smaller text for better fit */
+  }
 }
