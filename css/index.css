@@ -1054,9 +1054,7 @@ a {
   text-align: center;
   border: 1px solid #f5c6cb;
   max-width: 100%;
-  /* Ensure box doesn't exceed container */
-  box-sizing: border-box;
-  /* Include padding in width calculations */ }
+  box-sizing: border-box; }
 
 .contact-box a {
   background-color: #9e1950;
@@ -1068,12 +1066,13 @@ a {
   display: inline-block;
   text-align: center;
   line-height: 1.5;
-  max-width: 90%;
-  /* Limit link width to fit within box */
+  width: 100%;
+  /* Stretch to fill container */
+  max-width: 300px;
+  /* Consistent width for all buttons */
   overflow-wrap: break-word;
-  /* Allow long text to wrap */
   margin: 5px 0;
-  /* Add spacing between links */ }
+  box-sizing: border-box; }
 
 .contact-box a.whatsapp {
   background-color: #25D366;
@@ -1087,15 +1086,13 @@ a {
 @media (max-width: 600px) {
   .contact-box {
     padding: 10px;
-    font-size: 1rem;
-    /* Slightly smaller font on mobile */ }
+    font-size: 1rem; }
 
   .contact-box a {
     padding: 8px 15px;
-    max-width: 85%;
-    /* Tighter fit on mobile */
-    font-size: 0.9rem;
-    /* Smaller text for better fit */ } }
+    max-width: 250px;
+    /* Slightly smaller consistent width on mobile */
+    font-size: 0.9rem; } }
 .header {
   background: #fff; }
 
