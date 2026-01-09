@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
@@ -79,4 +79,12 @@
   @include animate(.5s);
   @extend .fade-in-top;
   animation-delay: 1.2s;
+}
+
+/* Mobile adjustments */  
+@media (max-width: 600px) {
+  .logo {
+    width: 300px;
+    padding: 0;
+  }
 }
